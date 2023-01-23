@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 if __name__ == "__main__":
     """Prints out the CLI arguments."""
     from sys import argv
