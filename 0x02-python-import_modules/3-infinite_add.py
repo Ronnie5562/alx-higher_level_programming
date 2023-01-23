@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """Prints the sum of all the CL arguments."""
+    """Prints the sum of arguments."""
     import sys
 
     sum = 0
