@@ -3,12 +3,12 @@ if __name__ == "__main__":
     """Prints out the CLI arguments."""
     from sys import argv
 
-    x = len(argv) - 1
-    if x == 0:
+    index = len(argv) - 1
+    if index == 0:
         print("0 arguments.")
-    elif x == 1:
+    elif index == 1:
         print("1 argument:")
     else:
-       print("{} arguments:".format(x))
-    for index in range(x):
-        print("{}: {}".format(index + 1, argv[index + 1]))
+        print("{} arguments:".format(index))
+    for i in range(index):
+        print("{}: {}".format(i + 1, argv[i + 1]))
