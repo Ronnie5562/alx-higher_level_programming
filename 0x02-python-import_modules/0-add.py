@@ -6,4 +6,4 @@ if __name__ == "__main__":
 
     a = 1
     b = 2
-    print(f"{a} + {b} = {}".format(a, b, add(a, b)))
+    print("{a} + {b} = {}".format(a, b, add(a, b)))
