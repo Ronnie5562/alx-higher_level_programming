@@ -9,5 +9,5 @@ if __name__ == "__main__":
     else:
        print("{} arguments:".format(len(argv)))
     if len(argv) != 0:
-        for index, arg in enumerate(argv):
-            print("{}: {}".format(index + 1, arg))
+        for index in argv:
+            print("{}: {}".format(index + 1, argv[index + 1]))
