@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
-    """Print the number of and list of arguments."""
-    import sys
+    """Prints out the CLI arguments."""
+    from sys import argv
 
-    count = len(sys.argv) - 1
-    if count == 0:
+    x = len(argv) - 1
+    if x == 0:
         print("0 arguments.")
-    elif count == 1:
+    elif x == 1:
         print("1 argument:")
     else:
-        print("{} arguments:".format(count))
-    for i in range(count):
-        print("{}: {}".format(i + 1, sys.argv[i + 1]))
+       print("{} arguments:".format(x))
+    if len(argv) > 1:
+        for index in range(x):
+            print("{}: {}".format(index + 1, argv[index + 1]))
