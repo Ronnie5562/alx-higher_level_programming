@@ -7,5 +7,3 @@ def square_matrix_simple(matrix=[]):
             list_1.append(y * y)
         list_2.append(list_1)
     return list_2
-
-print(square_matrix_simple([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
