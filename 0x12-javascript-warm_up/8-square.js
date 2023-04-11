@@ -6,7 +6,7 @@ if (isNaN(number)) {
     for (let i = 1; i <= number; i++) {
         let line = '';
         for (let i = 1; i <= number; i++) {
-            line += 'X'
+            line += 'X';
         }
         console.log(line);
     }
