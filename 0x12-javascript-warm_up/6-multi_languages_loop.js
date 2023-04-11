@@ -1,5 +1,5 @@
-#!/usr/bin/node
+//#!/usr/bin/node
 const texts = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-for (text of texts) {
+for (let text of texts) {
     console.log(text);
 }
