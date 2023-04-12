@@ -8,7 +8,7 @@ module.exports = class Rectangle {
     for (let i = 0; i < this.height; i++) console.log('X'.repeat(this.width));
   }
   
-  double = () => [this.width, this.height] = [this.width * 2, this.height * 2];
-  
-  rotate = () => [this.width, this.height] = [this.height, this.width];
+  double () { [this.width, this.height] = [this.width * 2, this.height * 2]; }
+
+  rotate () { [this.width, this.height] = [this.height, this.width]; }
 };
