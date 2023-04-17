@@ -17,4 +17,5 @@ if __name__ == "__main__":
                    (argv[4],))
     states = cur.fetchall()
     [print(state) for state in states]
-    
+    cur.close()
+    db.close()
