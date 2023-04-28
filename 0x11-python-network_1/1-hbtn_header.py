@@ -5,11 +5,12 @@
 - found in the header of the response.
 """
 
-if __name__ == "__main__":
-    import sys
-    import urllib.request
+import sys
+import urllib.request
 
+if __name__ == "__main__":
     url = sys.argv[1]
-    request = urllib.request.Request(url)
-    with urllib.request.urlopen(request) as response:
-        print(dict(response.headers).get("X-Request-Id"))
+
+    req = urllib.request.Request(url)
+    with urllib.request.urlopen(req) as response:
+        print(dict(response.headers)["X-Request-Id"])
