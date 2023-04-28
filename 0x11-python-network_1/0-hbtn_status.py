@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""__summary__
+"""
 Write a Python script that fetches https://alx-intranet.hbtn.io/status
 """
+
 
 if __name__ == '__main__':
     import urllib.request
